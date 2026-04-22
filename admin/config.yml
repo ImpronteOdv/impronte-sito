@@ -1,0 +1,111 @@
+# Configurazione Decap CMS — Impronte ODV
+# Pannello di modifica eventi
+
+backend:
+  name: git-gateway
+  branch: main
+
+# Dove Decap salva le foto caricate dal pannello
+media_folder: "assets/photos/eventi"
+public_folder: "/assets/photos/eventi"
+
+# Interfaccia in italiano
+locale: "it"
+
+collections:
+  - name: "eventi"
+    label: "Eventi"
+    label_singular: "Evento"
+    editor:
+      preview: false
+    files:
+      - name: "lista-eventi"
+        label: "Tutti gli eventi"
+        file: "_data/eventi.json"
+        format: "json"
+        fields:
+          - label: "Eventi"
+            name: "eventi"
+            widget: "list"
+            label_singular: "Evento"
+            summary: "{{fields.title}} — {{fields.data_evento}}"
+            fields:
+              - label: "ID univoco"
+                name: "id"
+                widget: "string"
+                hint: "Identificativo univoco, senza spazi. Es: 'aperimpronte-2026-04-22'. Se copi un evento esistente, cambialo!"
+              
+              - label: "Titolo"
+                name: "title"
+                widget: "string"
+                hint: "Es: 'Aperimpronte — un aperitivo per Dago'"
+              
+              - label: "Data e ora"
+                name: "data_evento"
+                widget: "datetime"
+                date_format: "DD/MM/YYYY"
+                time_format: "HH:mm"
+                format: "YYYY-MM-DDTHH:mm"
+                hint: "Giorno e ora dell'evento"
+              
+              - label: "Luogo"
+                name: "luogo"
+                widget: "string"
+                required: false
+                hint: "Es: '@caffeghinelli' o 'Piazza del Comune, Ostra Vetere'"
+              
+              - label: "Info aggiuntiva"
+                name: "info"
+                widget: "string"
+                required: false
+                hint: "Es: '15€ (5€ per Dago)'. Lascia vuoto se non serve."
+              
+              - label: "Descrizione"
+                name: "descrizione"
+                widget: "text"
+                hint: "Racconto dell'evento. Puoi usare **testo in grassetto** mettendo due asterischi ai lati."
+              
+              - label: "Messaggio in evidenza"
+                name: "highlight"
+                widget: "text"
+                required: false
+                hint: "Opzionale: frase da evidenziare (es. 'Dago sarà lì con noi!')"
+              
+              - label: "Link prenotazione"
+                name: "link_prenotazione"
+                widget: "string"
+                required: false
+                hint: "URL completo (es. Google Forms). Lascia vuoto se non serve prenotare."
+              
+              - label: "Mostra bottone WhatsApp"
+                name: "show_whatsapp"
+                widget: "boolean"
+                default: true
+              
+              - label: "Immagine"
+                name: "immagine"
+                widget: "image"
+                required: false
+                hint: "Locandina o foto (opzionale). Trascina qui un file dal tuo computer."
+              
+              - label: "Descrizione immagine"
+                name: "immagine_alt"
+                widget: "string"
+                required: false
+                default: "Immagine dell'evento"
+                hint: "Breve descrizione della foto (per accessibilità e SEO)"
+              
+              - label: "Stato"
+                name: "stato"
+                widget: "select"
+                options:
+                  - { label: "Programmato (futuro)", value: "programmato" }
+                  - { label: "Passato (archivio)", value: "passato" }
+                default: "programmato"
+                hint: "Dopo l'evento, spostalo su 'Passato' per archiviarlo"
+              
+              - label: "In evidenza nella home"
+                name: "featured"
+                widget: "boolean"
+                default: false
+                hint: "Se attivo, questo evento viene mostrato anche nella homepage"

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sostienici — Impronte ODV</title>
+  <meta name="description" content="Con 1€ al mese su Teaming, con un bonifico o con il 5x1000 aiuti Impronte ODV a salvare cani e gatti in difficoltà.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ============== HEADER ============== -->
+  <header class="topbar">
+    <div class="container">
+      <nav class="nav">
+        <a href="index.html" class="brand">
+          <img src="assets/logo.png" alt="Impronte ODV">
+          <span>
+            Impronte
+            <small>Associazione Animalosa</small>
+          </span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Chi siamo</a></li>
+          <li><a href="adozioni.html">Adozioni</a></li>
+          <li><a href="volontari.html">Volontari</a></li>
+          <li><a href="eventi.html">Eventi</a></li>
+          <li><a href="contatti.html">Contatti</a></li>
+          <li><a href="donazioni.html" class="nav-cta active">💛 Dona</a></li>
+        </ul>
+        <button class="burger" id="burger" aria-label="Apri menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+            <line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/>
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============== PAGE HEADER ============== -->
+  <section class="page-header">
+    <div class="container">
+      <span class="eyebrow">Sostienici</span>
+      <h1>C'è un modo semplice <em>per aiutarci</em></h1>
+      <p>Talmente semplice che spesso si sottovaluta. Ogni contributo, anche il più piccolo, diventa cibo, cure e una possibilità in più per chi non ha voce.</p>
+    </div>
+  </section>
+
+  <!-- ============== OPZIONI DONAZIONE ============== -->
+  <section class="section-white">
+    <div class="container">
+      <div class="donation-options">
+
+        <!-- TEAMING (featured) -->
+        <div class="donation-card featured">
+          <span class="donation-badge">Consigliato</span>
+          <div style="font-size: 0.9rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; opacity: 0.8; margin-bottom: 12px;">Teaming</div>
+          <div class="donation-amount">1€<small>/mese</small></div>
+          <h3>Una piccola impronta ogni mese</h3>
+          <p>Con solo 1€ al mese diventi parte concreta di tutto quello che facciamo: cibo, cure veterinarie, manutenzione degli spazi, emergenze. Un euro può sembrare poco — ma insieme può diventare qualcosa di enorme.</p>
+          <a href="https://www.teaming.net/impronteodv" target="_blank" rel="noopener" class="btn btn-white">Unisciti al gruppo Teaming ↗</a>
+        </div>
+
+        <!-- BONIFICO -->
+        <div class="donation-card">
+          <div style="font-size: 0.9rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--purple); margin-bottom: 12px;">Bonifico</div>
+          <div class="donation-amount" style="color: var(--purple-dark);">Libero</div>
+          <h3>Donazione singola o ricorrente</h3>
+          <p>Puoi fare una donazione una tantum o impostare un bonifico ricorrente. Ogni cifra è preziosa e fa davvero la differenza.</p>
+
+          <div class="donation-detail" style="flex-direction: column; align-items: stretch; text-align: center; gap: 14px;">
+            <div>
+              <div class="label">IBAN</div>
+              <code style="display: block; white-space: nowrap; overflow-x: auto; padding: 4px 0;">IT85T0306909606100000407288</code>
+            </div>
+            <button type="button" class="btn btn-secondary" style="padding: 8px 14px; font-size: 0.85rem; align-self: center;" onclick="copyToClipboard('IT85T0306909606100000407288', this)">Copia</button>
+          </div>
+          <p style="font-size: 0.85rem; color: var(--ink-muted); margin-bottom: 0;">Intestato a: Impronte ODV<br>Causale: Donazione per il rifugio</p>
+        </div>
+
+        <!-- 5x1000 -->
+        <div class="donation-card">
+          <div style="font-size: 0.9rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--purple); margin-bottom: 12px;">5×1000</div>
+          <div class="donation-amount" style="color: var(--purple-dark);">Gratis</div>
+          <h3>Firma nella tua dichiarazione</h3>
+          <p>Non ti costa nulla: è una quota delle tue imposte che lo Stato destina comunque al no-profit.</p>
+
+          <div class="donation-detail" style="flex-direction: column; align-items: stretch; text-align: center; gap: 14px;">
+            <div>
+              <div class="label">Codice Fiscale</div>
+              <code style="display: block; white-space: nowrap; overflow-x: auto; padding: 4px 0;">92057820422</code>
+            </div>
+            <button type="button" class="btn btn-secondary" style="padding: 8px 14px; font-size: 0.85rem; align-self: center;" onclick="copyToClipboard('92057820422', this)">Copia</button>
+          </div>
+          <p style="font-size: 0.85rem; color: var(--ink-muted); margin-bottom: 0;">Firma "Sostegno del volontariato" sulla dichiarazione.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== COME USIAMO I FONDI ============== -->
+  <section class="section-pale">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Trasparenza</span>
+        <h2>Dove vanno le tue donazioni</h2>
+        <p>Ogni euro che riceviamo ha una destinazione concreta. Ecco le voci principali.</p>
+      </div>
+
+      <div class="features">
+        <div class="feature">
+          <h3>Cure veterinarie</h3>
+          <p>Visite, esami, interventi, terapie, vaccinazioni, sterilizzazioni. È la voce più importante del nostro bilancio: molti animali arrivano in condizioni critiche.</p>
+        </div>
+        <div class="feature">
+          <h3>Cibo e farmaci</h3>
+          <p>Ogni giorno serve cibo di qualità, integratori, farmaci specifici e antiparassitari per tutti i cani e i gatti che accogliamo.</p>
+        </div>
+        <div class="feature">
+          <h3>Manutenzione canile</h3>
+          <p>Ristrutturazione dei box, messa in sicurezza del perimetro, piccoli lavori continui per garantire ambienti sicuri, puliti e sereni.</p>
+        </div>
+        <div class="feature">
+          <h3>Emergenze</h3>
+          <p>Un cucciolo trovato, un intervento chirurgico improvviso, un'emergenza notturna. Un fondo dedicato alle situazioni che non possono aspettare.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== MESSAGGIO EMOTIVO ============== -->
+  <section class="section-white">
+    <div class="container-narrow">
+      <div class="two-col">
+        <div>
+          <img src="assets/photos/donazioni-cura.jpg" alt="Volontaria abbraccia un cane in cura" class="section-photo">
+        </div>
+        <div class="text-col">
+          <span class="eyebrow">Perché conta</span>
+          <h2 style="margin-bottom: 18px;">Per te è un gesto. Per loro, una possibilità.</h2>
+          <p class="lead" style="margin-bottom: 16px;">
+            È come lasciare una piccola impronta ogni mese… che, unita a tante altre, costruisce qualcosa di grande.
+          </p>
+          <p style="color: var(--ink-muted);">
+            Non ti chiediamo grandi sacrifici. Ti chiediamo di esserci, in modo semplice ma costante. Perché ogni vita salvata è una responsabilità condivisa.
+          </p>
+          <p style="color: var(--purple-dark); font-weight: 600; font-style: italic; margin-top: 24px;">
+            💛 Insieme possiamo fare davvero la differenza.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== ALTRE FORMULE ============== -->
+  <section class="section-pale">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Altri modi per aiutarci</span>
+        <h2>Non solo denaro</h2>
+        <p>Se non puoi donare in denaro, ci sono tanti altri modi per darci una mano.</p>
+      </div>
+
+      <div class="cards-grid">
+        <div class="card">
+          <div class="icon">🛒</div>
+          <h3>Donazioni</h3>
+          <p>Cibo, coperte, medicinali, materiale di pulizia, cucce. Contattaci per sapere cosa serve di più in questo momento.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🏠</div>
+          <h3>Stallo temporaneo</h3>
+          <p>Apri la tua casa a un animale per qualche settimana o mese. È fondamentale per cuccioli, malati e cani in attesa di adozione.</p>
+        </div>
+        <div class="card">
+          <div class="icon">📣</div>
+          <h3>Passaparola</h3>
+          <p>Segui i nostri canali social, condividi i post, racconta di noi. La visibilità è uno dei beni più preziosi per un'associazione piccola.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== CTA ============== -->
+  <section class="section-white">
+    <div class="container">
+      <div class="cta-banner">
+        <h2>Grazie di cuore</h2>
+        <p>Qualsiasi cosa tu scelga di fare per noi, sappi che fa la differenza. I nostri ospiti ti ringraziano con una coda scodinzolante e mille fusa.</p>
+        <div class="btn-group">
+          <a href="https://www.teaming.net/impronteodv" target="_blank" rel="noopener" class="btn btn-white btn-large">Vai a Teaming ↗</a>
+          <a href="contatti.html" class="btn btn-ghost btn-large">Hai domande?</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== FOOTER ============== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <img src="assets/logo.png" alt="Impronte ODV">
+            Impronte
+          </div>
+          <p>Associazione di volontariato per la tutela degli animali in difficoltà.<br>Ostra Vetere (AN) · C.F. 92057820422</p>
+          <div class="footer-socials">
+            <a href="https://www.instagram.com/impronte.odv" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61569943440212" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg fill="currentColor" viewBox="0 0 24 24"><path d="M13.5 21v-7h2.5l.5-3h-3V9c0-.9.3-1.5 1.6-1.5H17V5c-.3 0-1.3-.1-2.4-.1-2.4 0-4.1 1.5-4.1 4.1V11H8v3h2.5v7h3z"/></svg>
+            </a>
+            <a href="https://www.tiktok.com/@impronte.odv" target="_blank" rel="noopener" aria-label="TikTok">
+              <svg fill="currentColor" viewBox="0 0 24 24"><path d="M16.6 5.8a4.3 4.3 0 0 1-2.5-1.6V14a4.5 4.5 0 1 1-4.5-4.5v2.6a2 2 0 1 0 2 2V2h2.4c.3 2 1.7 3.4 3.7 3.6v2.2z"/></svg>
+            </a>
+            <a href="mailto:impronte.ass@gmail.com" aria-label="Email">
+              <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4>Naviga</h4>
+          <ul>
+            <li><a href="index.html">Chi siamo</a></li>
+            <li><a href="adozioni.html">Adozioni</a></li>
+            <li><a href="volontari.html">Volontari</a></li>
+            <li><a href="eventi.html">Eventi</a></li>
+            <li><a href="contatti.html">Contatti</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Sostienici</h4>
+          <ul>
+            <li><a href="https://www.teaming.net/impronteodv" target="_blank" rel="noopener">Teaming 1€/mese</a></li>
+            <li><a href="donazioni.html">Bonifico / IBAN</a></li>
+            <li><a href="donazioni.html">5×1000</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contatti</h4>
+          <ul>
+            <li><a href="https://wa.me/393514946802" target="_blank" rel="noopener">WhatsApp<br>+39 351 494 6802</a></li>
+            <li><a href="mailto:impronte.ass@gmail.com">impronte.ass@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Impronte ODV — Tutti i diritti riservati</span>
+        <span><a href="privacy.html" style="color: inherit;">Privacy</a> · <a href="privacy.html" style="color: inherit;">Cookie</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('burger').addEventListener('click', function() {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+
+    // Funzione per copiare IBAN e Codice Fiscale
+    function copyToClipboard(text, btn) {
+      navigator.clipboard.writeText(text).then(() => {
+        const originalText = btn.textContent;
+        btn.textContent = '✓ Copiato';
+        btn.style.background = 'var(--purple-dark)';
+        btn.style.color = 'white';
+        setTimeout(() => {
+          btn.textContent = originalText;
+          btn.style.background = '';
+          btn.style.color = '';
+        }, 1800);
+      });
+    }
+  </script>
+</body>
+</html>
