@@ -1,0 +1,19 @@
+{
+  "eventi": [
+    {
+      "id": "aperimpronte-2026-04-22",
+      "title": "Aperimpronte — un aperitivo per Dago",
+      "data_evento": "2026-04-22T19:00",
+      "luogo": "@caffeghinelli",
+      "info": "15€ (5€ per le cure di Dago)",
+      "descrizione": "Un aperitivo diverso dal solito. Un momento per stare insieme, conoscerci e fare del bene. Questa volta lo facciamo per **Dago**: è arrivato da noi in condizioni disperate, oggi sta meglio e sta iniziando una nuova vita — ma ha ancora bisogno di cure e supporto.",
+      "highlight": "E la cosa più bella? Dago sarà lì con noi. Potrete conoscerlo, vederlo con i vostri occhi, e capire davvero quanto sia importante continuare ad aiutarlo.",
+      "link_prenotazione": "https://forms.gle/NApvYTanFxccNs3D9",
+      "show_whatsapp": true,
+      "immagine": "/assets/photos/aperimpronte.jpg",
+      "immagine_alt": "Locandina Aperimpronte per Dago",
+      "stato": "programmato",
+      "featured": true
+    }
+  ]
+}
