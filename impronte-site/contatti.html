@@ -111,7 +111,8 @@
           <p style="color: var(--ink-muted); margin-bottom: 28px; font-size: 0.95rem;">Ti risponderemo appena possibile.</p>
 
           <!-- Stesse note per il form della pagina volontari: configurare Formspree, Web3Forms o Netlify Forms -->
-          <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" id="contattiForm">
+          <form name="contatti" method="POST" data-netlify="true" id="contattiForm">
+     <input type="hidden" name="form-name" value="contatti">
 
             <div class="form-group">
               <label for="c-nome">Nome e cognome *</label>
