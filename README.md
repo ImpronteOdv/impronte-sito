@@ -57,14 +57,12 @@ I form di **volontari.html** e **contatti.html** attualmente hanno come destinaz
 - Oppure **Web3Forms** (250 invii/mese gratis): vedi le istruzioni nei commenti HTML dei form.
 - Oppure **Netlify Forms** (100 invii/mese gratis, solo se ospiti su Netlify): aggiungi `data-netlify="true"` al tag `<form>`.
 
-### 2. Configurare le piattaforme di adozione
+### 2. Piattaforme di adozione
 
 In `adozioni.html` ci sono due card:
 
-- **Petfactor** (adozione fisica): il link è attualmente `href="#"`. Quando avrai creato l'account e caricato gli animali, sostituiscilo con l'URL pubblico della vostra pagina Petfactor.
-- **MyAnimal** (adozione a distanza): il link punta già a [my-animal.it](https://www.my-animal.it) ma è generico. Quando avrai la pagina dedicata a Impronte ODV su MyAnimal, sostituisci l'URL con quello specifico.
-
-Cerca `Petfactor` e `MyAnimal` nel file con Trova-Sostituisci per trovare tutti i punti da aggiornare (ci sono anche nella CTA finale).
+- **Petfactor** (adozione fisica): il link è attivo a [petfactor.it/lista-cani](https://www.petfactor.it/lista-cani/). I visitatori devono filtrare per "Impronte Odv" nel filtro Associazione (istruzione già indicata sotto il bottone nella card).
+- **Adozione a distanza**: la richiesta avviene direttamente via WhatsApp (+39 351 494 6802). Non si usa più alcuna piattaforma esterna per questo.
 
 ### 3. Inserire le foto reali
 
@@ -131,8 +129,9 @@ Copia una delle pagine esistenti (es. `contatti.html`), rinominala, modifica i c
 - **Email**: impronte.ass@gmail.com
 - **Instagram / Facebook / TikTok**: impronte.odv
 - **Teaming** (donazioni 1€/mese): https://www.teaming.net/impronteodv
-- **Petfactor** (adozioni fisiche): da configurare
-- **MyAnimal** (adozioni a distanza): https://www.my-animal.it
+- **Petfactor** (adozioni fisiche): https://www.petfactor.it/lista-cani/ (filtrare per "Impronte Odv")
+- **Adozioni a distanza**: via WhatsApp (+39 351 494 6802)
+- **Rete del Dono**: https://www.retedeldono.it/onp/impronte-odv
 - **IBAN**: IT85T0306909606100000407288
 - **5×1000 / CF**: 92057820422
 
