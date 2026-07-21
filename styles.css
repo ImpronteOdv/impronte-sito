@@ -2379,3 +2379,25 @@ button.service-cta {
   .aad-thanks-box { padding: 36px 24px; }
   .form-row { grid-template-columns: 1fr; gap: 0; }
 }
+
+/* Modal: doppia azione (adotta a distanza + chiedi info) */
+.modal-actions {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  align-items: stretch;
+}
+.modal-actions .btn {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+  min-width: 0;
+  box-sizing: border-box;
+}
+@media (min-width: 500px) {
+  .modal-actions {
+    grid-template-columns: 1fr 1fr;
+  }
+}
